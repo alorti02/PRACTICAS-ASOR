@@ -5,7 +5,7 @@
 
 int main(){
     if(setuid(2) == -1){
-        perror("Vaya, ha habido un error. \n");
+        printf("Vaya, ha habido un error: %d. \n", errno);
     }
     
     else{
