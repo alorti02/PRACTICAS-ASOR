@@ -4,10 +4,8 @@
 #include <string.h>
 
 int main(){
-    char *s;
-
     if(setuid(2) == -1){
-        perror(s);
+        perror("Vaya, ha habido un error. \n");
     }
     
     else{
