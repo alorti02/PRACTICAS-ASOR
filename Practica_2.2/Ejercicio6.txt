@@ -1,0 +1,2 @@
+Para ello habría que hacer:
+$umask 027, ya que para controlar los permisos se hace una AND del argumento con 777. De esta manera, el grupo no tiene permiso de escritura y el resto ninguno.
