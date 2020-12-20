@@ -1,0 +1,29 @@
+APARTADO A:
+   Habría que ejecutar:
+   
+   $touch archivo
+   $mkdir dir
+   $ln -s archivo archivo_simbolico
+   $ln -s dir dir_simbolico
+   $ls -li
+   
+358772 -rw-rw-r-- 1 usuarioso usuarioso    0 dic 20 22:57  archivo
+358847 lrwxrwxrwx 1 usuarioso usuarioso    7 dic 20 22:57  archivo_simbolico -> archivo
+360697 drwxrwxr-x 2 usuarioso usuarioso 4096 dic 20 22:57  dir
+358848 lrwxrwxrwx 1 usuarioso usuarioso    3 dic 20 23:00  dir_simbolico -> dir
+   
+  APARTADO B: (No se pueden establecer enlaces rigidos con directorios)
+  
+   $touch archivo
+   $mkdir dir
+   $ln -s archivo archivo_rigido
+   $ls -li
+    
+358772 -rw-rw-r-- 2 usuarioso usuarioso    0 dic 20 22:57  archivo
+358772 -rw-rw-r-- 2 usuarioso usuarioso    0 dic 20 22:57  archivo_rigido
+
+
+  APARTADO C:
+  Si se borra uno de los enlaces rigidos no ocurre nada, porque el otro archivo se mantiene intacto
+  Si se borra el enlace simbolico no pasa nada porque el archivo original se mantiene intacto
+  Si se borra el fichero original se corrompe el enlace simbólico
