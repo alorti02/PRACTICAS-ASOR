@@ -1,0 +1,4 @@
+Se tendrían que ejecutar las siguientes órdenes:
+$mkdir directorio
+$chmod -x directorio/
+$cd directorio
