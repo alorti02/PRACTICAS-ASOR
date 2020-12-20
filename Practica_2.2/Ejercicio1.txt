@@ -1,0 +1,11 @@
+Utilizando $man ls , sacamos la información necesaria.
+
+-a: No se ignoran las entradas que empiezan por .
+-l: Usa un formato de listado largo
+-d: Muestra directorios en lugar de contenidos
+-h: usando -l, imprime los tamaños en formato legible
+-i: imprime el indice de cada archivo
+-R: muetsra los subdirectorios recursivamente
+-1: Muestra un archivo por línea
+-F: indica tipo (/ directorio, * ejecutable o @ enlace simbolico)
+--color: Colorea la salida (modos: always, never y auto)
