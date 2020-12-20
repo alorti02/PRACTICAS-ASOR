@@ -1,0 +1,5 @@
+Utilizamos el comando $ls -ld en la carpeta donde hice uno de los ejercicios de la práctica anterior:
+
+drwxrwxr-x 2 alex alex 4096 dic  5 23:58 .
+
+Podemos observar que es un directorio y que tanto el usuario como el grupo tienen todos los permisos (rwx), y el resto solo lectura y ejecución (r-x).
