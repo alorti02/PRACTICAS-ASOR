@@ -1,0 +1,8 @@
+rw-r--r-x quiere decir permisos de lectura y escritura para el usuario, de lectura para el grupo y de lectura y ejecución para el resto, luego:
+rw- --> 110 = 6
+r-- --> 100 = 4
+r-x --> 101 = 5
+
+En octal sería: $chmod 645 archivo
+
+En notación simbólica sería: $chmod u+rw-x,g+r-wx,o+rx-w archivo
