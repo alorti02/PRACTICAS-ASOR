@@ -1,0 +1,7 @@
+$sudo -i
+
+//Cambiando politica de privacidad a 12
+$chrt -f -p 12 22152
+
+$gcc -o ej Ejercicio2.c
+$./ej
