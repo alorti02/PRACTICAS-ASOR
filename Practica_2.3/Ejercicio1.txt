@@ -1,0 +1,7 @@
+$sudo -i
+
+//Cambiar el valor de nice de la shell a -10
+$nice -n-10 /bin/sh
+
+//Cambiar ka politica de planificacion a SCHED_FIFO con prioridad 12
+$chrt -f -p 10 22152
